@@ -1,0 +1,141 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.single-place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  margin: 16px 0;
+  border: 1px solid #c6c6c6;
+  position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  img {
+    border-radius: 2px;
+  }
+
+  img:nth-of-type(2) {
+    position: absolute;
+    top: $space-standard;
+    left: 180px;
+    z-index: 1;
+    width: $space-medium;
+    height: $space-medium;
+    cursor: pointer;
+  }
+
+  .place-description {
+    margin: 0 $space-x-small;
+
+    h3 {
+      font-size: pxToRem(20);
+      color: $c-lochmara;
+      font-weight: bold;
+      line-height: 28px;
+      margin: 0;
+    }
+    .address-card {
+      p {
+        color: $c-lochmara;
+        cursor: pointer;
+        font-size: pxToRem(12);
+        line-height: 18px;
+        text-decoration: underline;
+        margin-top: 0;
+        display: inline-block;
+        padding-right: 8px;
+        padding-left: 0;
+      }
+
+      span {
+        cursor: unset;
+        font-size: pxToRem(12);
+        color: $c-mine-shaft;
+        margin-left: $space-xs-small;
+      }
+    }
+
+    p {
+      font-size: pxToRem(12);
+      line-height: 18px;
+      font-weight: 400;
+    }
+
+    .reservation {
+      color: $c-guardsman-red;
+    }
+  }
+  .mobile-rating {
+    display: none;
+  }
+
+  .rating-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 140px;
+    width: 20%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+
+    .rating {
+      text-align: right;
+      margin-right: 8px;
+
+      p {
+        margin: 0;
+        color: $c-mine-shaft;
+        font-size: pxToRem(16);
+        font-weight: 500;
+        line-height: 24px;
+      }
+
+      span {
+        margin: 0;
+        color: $c-dove-gray;
+        font-size: pxToRem(12);
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+
+    .grade {
+      p {
+        background: $c-resolution-blue;
+        color: $c-white;
+        border-radius: 5.81818px 5.81818px 5.81818px 0;
+        height: 32px;
+        width: 32px;
+        min-width: 32px;
+        font-size: pxToRem(16);
+        font-weight: 500;
+        line-height: 32px;
+        text-align: center;
+        margin: 0;
+        margin-top: $space-xs-small;
+      }
+    }
+
+    button {
+      margin-top: $space-standard;
+      padding: 8px 16px;
+      color: $c-white;
+      background-color: $c-lochmara;
+      border: none;
+      border-radius: 2px;
+      height: 36px;
+    }
+  }
+}

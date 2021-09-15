@@ -1,0 +1,174 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.travel-talk-wrapper {
+  max-width: $wrapper-high;
+  margin: 0 auto;
+
+  h2 {
+    margin-top: $space-x-large;
+    font-size: pxToRem(27);
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .travel-pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .travel-element {
+      margin: 1%;
+    }
+
+    p {
+      font-size: pxToRem(17);
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 2px;
+    }
+
+    span {
+      font-size: pxToRem(14);
+      font-weight: 400;
+      line-height: $space-standard;
+      color: $c-dove-gray;
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .travel-talk-wrapper {
+    h2 {
+      padding-left: $space-x-small;
+    }
+
+    .travel-pictures {
+      .travel-element {
+        p {
+          margin-top: $space-x-small;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-laptop) {
+  .travel-talk-wrapper {
+    .travel-pictures {
+      .travel-element {
+        p {
+          margin-top: $space-xs-small;
+          margin-left: $space-xs-small;
+        }
+        span {
+          margin-left: $space-xs-small;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .travel-talk-wrapper {
+    .travel-pictures {
+      .travel-element {
+        p {
+          line-height: 21px;
+        }
+        span {
+          font-size: pxToRem(13);
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .travel-talk-wrapper {
+    .travel-pictures {
+      .travel-element {
+        p {
+          font-size: pxToRem(16);
+          line-height: $space-standard;
+        }
+        span {
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .travel-talk-wrapper {
+    h2 {
+      font-size: pxToRem(22);
+    }
+    .travel-pictures {
+      .travel-element {
+        p {
+          font-size: pxToRem(15);
+          line-height: 18px;
+        }
+        span {
+          font-size: pxToRem(11);
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .travel-talk-wrapper {
+    .travel-pictures {
+      .travel-element {
+        p {
+          font-size: pxToRem(14);
+          line-height: 16px;
+        }
+        span {
+          font-size: pxToRem(10);
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .travel-talk-wrapper {
+    .travel-pictures {
+      .travel-element {
+        p {
+          font-size: pxToRem(14);
+          line-height: $space-small;
+        }
+        span {
+          font-size: pxToRem(11);
+          line-height: 14px;
+        }
+
+        span:first-of-type {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .travel-talk-wrapper {
+    display: none;
+  }
+}

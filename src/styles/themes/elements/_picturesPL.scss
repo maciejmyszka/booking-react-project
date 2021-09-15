@@ -1,0 +1,474 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.pictures-wrapper {
+  max-width: $wrapper;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 4% auto $space-medium auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 $space-x-small;
+
+  .gdynia,
+  .sopot {
+    width: 49%;
+    position: relative;
+
+    img {
+      border-radius: 3px;
+    }
+
+    .picture-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 548px;
+      height: 50%;
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(0, 27, 65, 0.65)),
+        to(rgba(0, 27, 65, 0))
+      );
+      background: -o-linear-gradient(
+        top,
+        rgba(0, 27, 65, 0.65) 0,
+        rgba(0, 27, 65, 0) 100%
+      );
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 27, 65, 0.65) 0,
+        rgba(0, 27, 65, 0) 100%
+      );
+
+      img {
+        height: 27px;
+        position: absolute;
+        top: 24px;
+        left: 128px;
+        width: unset;
+      }
+
+      h3 {
+        position: absolute;
+        top: $space-standard;
+        left: $space-standard;
+        font-weight: bold;
+        font-size: pxToRem(27);
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        color: $c-white;
+      }
+
+      span {
+        position: absolute;
+        top: 55px;
+        left: $space-standard;
+        color: $c-white;
+        text-shadow: 1px 1px 1px $c-black;
+      }
+    }
+
+    .price {
+      position: absolute;
+      top: 80%;
+      right: 3%;
+      font-size: pxToRem(12);
+      font-weight: 400;
+      line-height: 18px;
+      background-color: $c-tundora;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      color: $c-white;
+      height: 17%;
+      width: 16%;
+      min-width: 83px;
+      min-height: 43px;
+
+      p {
+        margin: 0;
+        font-size: pxToRem(12);
+        line-height: $space-small;
+        padding: $space-xs-small;
+      }
+
+      span {
+        position: absolute;
+        top: $space-standard;
+        left: 36px;
+        font-size: pxToRem(16);
+        line-height: 16px;
+      }
+    }
+  }
+
+  .stronie,
+  .wisla,
+  .poznan {
+    width: 32.33%;
+    margin: $space-x-small 0;
+    position: relative;
+
+    img {
+      border-radius: 3px;
+    }
+
+    .picture-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 365px;
+      height: 50%;
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(0, 27, 65, 0.65)),
+        to(rgba(0, 27, 65, 0))
+      );
+      background: -o-linear-gradient(
+        top,
+        rgba(0, 27, 65, 0.65) 0,
+        rgba(0, 27, 65, 0) 100%
+      );
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 27, 65, 0.65) 0,
+        rgba(0, 27, 65, 0) 100%
+      );
+
+      img {
+        height: 27px;
+        position: absolute;
+        top: 24px;
+        left: 225px;
+        width: unset;
+      }
+
+      h3 {
+        position: absolute;
+        top: $space-standard;
+        left: $space-standard;
+        font-weight: bold;
+        font-size: pxToRem(27);
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        color: $c-white;
+      }
+
+      span {
+        position: absolute;
+        top: 55px;
+        left: $space-standard;
+        color: $c-white;
+        text-shadow: 1px 1px 1px $c-black;
+      }
+    }
+
+    .price {
+      position: absolute;
+      top: 80%;
+      right: 3%;
+      font-size: pxToRem(12);
+      font-weight: 400;
+      line-height: 18px;
+      background-color: $c-tundora;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      color: $c-white;
+      height: 17%;
+      width: 23%;
+      min-width: 83px;
+      min-height: 43px;
+
+      p {
+        margin: 0;
+        font-size: pxToRem(12);
+        line-height: $space-small;
+        padding: $space-xs-small;
+      }
+
+      span {
+        position: absolute;
+        top: $space-standard;
+        left: 36px;
+        font-size: pxToRem(16);
+        line-height: 16px;
+      }
+    }
+  }
+  .sopot {
+    .picture-top {
+      img {
+        left: 110px;
+      }
+    }
+  }
+
+  .wisla {
+    .picture-top {
+      img {
+        left: 105px;
+      }
+    }
+  }
+
+  .poznan {
+    .picture-top {
+      img {
+        left: 128px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .pictures-wrapper {
+    .gdynia,
+    .sopot,
+    .stronie,
+    .poznan,
+    .wisla {
+      .price {
+        top: 74%;
+        right: 3%;
+        height: 20%;
+        width: 19%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .pictures-wrapper {
+    .gdynia .picture-top img {
+      top: 21px;
+      left: 105px;
+    }
+    .sopot .picture-top img {
+      top: 21px;
+      left: 95px;
+    }
+    .stronie .picture-top img {
+      top: 21px;
+      left: 190px;
+    }
+    .wisla .picture-top img {
+      top: 21px;
+      left: 87px;
+    }
+    .poznan .picture-top img {
+      top: 21px;
+      left: 106px;
+    }
+
+    .gdynia,
+    .sopot,
+    .stronie,
+    .poznan,
+    .wisla {
+      .picture-top {
+        h3 {
+          font-size: pxToRem(24);
+        }
+
+        span {
+          font-size: pxToRem(14);
+        }
+      }
+
+      .price {
+        top: 72%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .pictures-wrapper {
+    .gdynia .picture-top img {
+      left: 95px;
+    }
+    .sopot .picture-top img {
+      left: 85px;
+    }
+    .stronie .picture-top img {
+      left: 174px;
+    }
+    .wisla .picture-top img {
+      left: 80px;
+    }
+    .poznan .picture-top img {
+      left: 98px;
+    }
+
+    .gdynia,
+    .sopot,
+    .stronie,
+    .poznan,
+    .wisla {
+      .picture-top {
+        h3 {
+          font-size: pxToRem(22);
+        }
+
+        span {
+          font-size: pxToRem(13);
+        }
+      }
+
+      .price {
+        top: 68%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .pictures-wrapper {
+    .stronie .picture-top img {
+      top: 19px;
+      left: 99px;
+    }
+    .gdynia .picture-top img {
+      top: 19px;
+      left: 95px;
+    }
+    .sopot .picture-top img {
+      top: 19px;
+      left: 85px;
+    }
+    .wisla .picture-top img {
+      top: 19px;
+      left: 80px;
+    }
+    .poznan .picture-top img {
+      top: 19px;
+      left: 98px;
+    }
+
+    .gdynia,
+    .sopot,
+    .stronie,
+    .poznan,
+    .wisla {
+      .picture-top {
+        h3 {
+          width: 150px;
+        }
+
+        span {
+          top: 47px;
+        }
+      }
+      .price {
+        top: 65%;
+      }
+    }
+
+    .stronie {
+      .picture-top {
+        span {
+          top: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .pictures-wrapper {
+    .gdynia,
+    .sopot,
+    .stronie,
+    .poznan,
+    .wisla {
+      .price {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-mobile) {
+  .pictures-wrapper {
+    .gdynia,
+    .sopot,
+    .stronie,
+    .poznan,
+    .wisla {
+      .picture-top {
+        img {
+          height: $space-standard;
+        }
+
+        h3 {
+          font-size: pxToRem(20);
+          width: 100px;
+        }
+        span {
+          font-size: pxToRem(12);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .pictures-wrapper {
+    .stronie .picture-top img {
+      left: 85px;
+    }
+    .gdynia .picture-top img {
+      left: 84px;
+    }
+    .sopot .picture-top img {
+      left: 75px;
+    }
+    .wisla .picture-top img {
+      left: 70px;
+    }
+    .poznan .picture-top img {
+      left: 88px;
+    }
+    .gdynia,
+    .sopot,
+    .stronie,
+    .poznan,
+    .wisla {
+      .picture-top {
+        img {
+          height: 22px;
+        }
+
+        h3 {
+          font-size: pxToRem(18);
+          width: 80px;
+        }
+        span {
+          font-size: pxToRem(11);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .pictures-wrapper {
+    display: none;
+  }
+}

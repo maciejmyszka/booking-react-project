@@ -1,0 +1,103 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.footer-wrapper {
+  background-color: $c-resolution-blue;
+  font-size: pxToRem(13);
+  padding: 0;
+
+  .top-wrapper {
+    padding: 16px 0;
+    border-bottom: 1px solid $c-white;
+
+    button {
+      border: 1px solid $c-white;
+      border-radius: 3px;
+      color: $c-white;
+      display: block;
+      margin: 0 auto;
+      font-weight: normal;
+      padding: 7px $space-small;
+      text-decoration: none;
+      background-color: transparent;
+      font-size: pxToRem(13);
+    }
+  }
+
+  .bottom-wrapper {
+    max-width: 1094px;
+    min-width: 620px;
+    margin: 0 auto;
+    padding: 0 8px;
+
+    p {
+      color: $c-white;
+      font-weight: bold;
+      text-decoration: underline;
+      padding: $space-small $space-x-small;
+      font-size: pxToRem(13);
+      cursor: pointer;
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}
+
+.footerNav-wrapper {
+  max-width: 1094px;
+  min-width: 620px;
+  margin: 0 auto;
+  padding: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: $space-medium;
+
+  .col-5 {
+    margin-top: $space-x-small;
+    width: 20%;
+
+    p {
+      display: block;
+      margin: 0;
+      margin-bottom: 4px;
+      font-size: pxToRem(13);
+      list-style-type: none;
+      color: $c-lochmara;
+      font-weight: 400;
+      padding: 3px;
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .footer-wrapper {
+    .bottom-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  }
+  .footerNav-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $wrapper-mid) {
+  .footer-wrapper {
+    .bottom-wrapper {
+      min-width: unset;
+    }
+  }
+}

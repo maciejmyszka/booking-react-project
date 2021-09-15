@@ -1,0 +1,86 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.health-secure-wrapper {
+  margin: $space-standard;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid $c-mercury;
+  padding: 16px;
+  border-radius: 2px;
+
+  .health-description {
+    margin-left: $space-x-small;
+
+    h4 {
+      font-size: pxToRem(16);
+      font-weight: 700;
+      line-height: 24px;
+      margin: 0;
+    }
+
+    p {
+      font-size: pxToRem(14);
+      margin: 0;
+      margin-top: $space-x-small;
+    }
+
+    span {
+      color: $c-lochmara;
+      text-decoration: underline;
+      cursor: pointer;
+      display: inline;
+      font-size: pxToRem(14);
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .health-secure-wrapper {
+    .health-pic {
+      img {
+        margin: auto;
+      }
+    }
+
+    .health-description {
+      h4 {
+        font-size: pxToRem(15);
+        line-height: 18px;
+      }
+
+      p {
+        font-size: pxToRem(13);
+        margin-top: $space-xs-small;
+      }
+
+      span {
+        font-size: pxToRem(13);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .health-secure-wrapper {
+    .health-description {
+      h4 {
+        font-size: pxToRem(14);
+        line-height: 16px;
+      }
+
+      p {
+        font-size: pxToRem(12);
+      }
+
+      span {
+        font-size: pxToRem(12);
+      }
+    }
+  }
+}

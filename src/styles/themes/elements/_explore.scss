@@ -1,0 +1,87 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.explore-wrapper {
+  max-width: $wrapper-high;
+  margin: $space-x-large auto;
+  margin-bottom: 25px;
+
+  h2 {
+    font-size: pxToRem(26);
+    font-weight: 700;
+    line-height: 32px;
+    padding-left: $space-x-small;
+  }
+
+  .explore-pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .explore-element {
+      position: relative;
+      margin: 0 1%;
+
+      p {
+        text-align: center;
+        color: $c-lochmara;
+        margin-top: 6px;
+        font-size: pxToRem(14);
+      }
+
+      .explore-description {
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+
+        p {
+          color: $c-white;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          height: 31px;
+          overflow: hidden;
+          background-color: rgba(0, 0, 0, 0.3);
+          margin: 0;
+          padding: 4px $space-xs-small;
+          line-height: $space-medium;
+          text-align: center;
+          font-size: pxToRem(13);
+        }
+      }
+
+      .explore-description:hover {
+        p {
+          line-height: $space-standard;
+          height: 129px;
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0 $space-small;
+          -o-text-overflow: clip;
+          text-overflow: clip;
+          white-space: normal;
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .explore-wrapper .explore-pictures .explore-element .explore-description p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .explore-wrapper {
+    display: none;
+  }
+}

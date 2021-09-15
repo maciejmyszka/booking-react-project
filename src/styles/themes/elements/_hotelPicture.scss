@@ -1,0 +1,119 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.hotel-picture-wrapper {
+  margin: $space-standard;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  .auto-slick-wrapper {
+    display: none;
+  }
+
+  .rating {
+    position: absolute;
+    top: $space-x-small;
+    right: 55px;
+    background-color: $c-white;
+    padding: $space-x-small;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    .left {
+      margin-right: $space-x-small;
+      p {
+        font-size: pxToRem(16);
+        font-weight: 500;
+        margin: 0;
+        color: $c-mine-shaft;
+        background-color: unset;
+        min-width: 120px;
+        text-align: unset;
+        height: unset;
+        line-height: 16px;
+      }
+
+      span {
+        color: $c-dove-gray;
+        font-size: pxToRem(12);
+        font-weight: 400;
+        line-height: 18px;
+        display: block;
+      }
+    }
+
+    p {
+      background: $c-resolution-blue;
+      color: $c-white;
+      border-radius: 5.81818px 5.81818px 5.81818px 0;
+      height: 32px;
+      width: 32px;
+      min-width: 32px;
+      font-size: pxToRem(16);
+      font-weight: 500;
+      line-height: 32px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .col-picture {
+    width: 33.3%;
+
+    img:nth-of-type(2) {
+      margin-top: 7px;
+    }
+  }
+
+  .main-picture {
+    width: 66.6%;
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .hotel-picture-wrapper {
+    width: unset;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: block;
+    width: 95%;
+
+    .col-picture {
+      display: none;
+    }
+
+    .main-picture {
+      display: none;
+    }
+
+    .auto-slick-wrapper {
+      display: unset;
+
+      .slick-prev:before,
+      .slick-next:before {
+        display: none;
+      }
+    }
+
+    .rating {
+      left: 1%;
+      right: unset;
+      z-index: 1;
+    }
+  }
+}

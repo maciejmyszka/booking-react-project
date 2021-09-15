@@ -1,0 +1,67 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.polishPlaces-wrapper {
+  max-width: $wrapper-high;
+  margin: 0 auto;
+  margin-bottom: $space-large;
+
+  h2 {
+    margin-bottom: $space-xs-small;
+    font-size: pxToRem(20);
+  }
+
+  p {
+    margin-top: 2px;
+    font-size: pxToRem(15);
+    font-weight: 400;
+    line-height: 24px;
+    color: $c-dove-gray;
+  }
+
+  .slider-wrapper {
+    .slick-list .slick-track .slick-slide {
+      max-width: 210px !important;
+      margin: 0 $space-xs-small;
+    }
+    p {
+      font-size: pxToRem(17);
+      font-weight: 700;
+      line-height: 24px;
+      color: $c-black;
+      margin-top: $space-x-small;
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .polishPlaces-wrapper {
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 $space-x-small;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .polishPlaces-wrapper {
+    padding: 0;
+
+    h2 {
+      margin-left: $space-x-small;
+    }
+
+    p {
+      margin-left: $space-x-small;
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .polishPlaces-wrapper {
+    display: none;
+  }
+}

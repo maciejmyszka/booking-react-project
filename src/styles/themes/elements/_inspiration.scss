@@ -1,0 +1,352 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.inspiration-wrapper {
+  max-width: $wrapper-high;
+  margin: $space-standard auto;
+
+  h2 {
+    font-size: pxToRem(24);
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: $space-xs-small;
+  }
+
+  .articles-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    img {
+      border-radius: 3px;
+      -webkit-transition: -webkit-transform ease 0.4s;
+      transition: -webkit-transform ease 0.4s;
+      -o-transition: transform ease 0.4s;
+      transition: transform ease 0.4s;
+      transition: transform ease 0.4s, -webkit-transform ease 0.4s;
+    }
+
+    img:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+
+    .row-3 {
+      width: 31.9%;
+      position: relative;
+      margin-bottom: $space-x-smaller;
+      // text-shadow: 0 1px 2px rgb(0 0 0 / 25%);
+      margin: 0.7%;
+
+      .dark {
+        width: 100%;
+        max-width: 354px;
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(12%, rgba(0, 0, 0, 0)),
+          color-stop(97%, #000)
+        );
+        background-image: -o-linear-gradient(
+          top,
+          rgba(0, 0, 0, 0) 12%,
+          #000 97%
+        );
+        background-image: linear-gradient(
+          -180deg,
+          rgba(0, 0, 0, 0) 12%,
+          #000 97%
+        );
+        pointer-events: none;
+
+        h3 {
+          position: absolute;
+          color: $c-white;
+          font-size: pxToRem(20);
+          line-height: 28px;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        p {
+          position: absolute;
+          color: $c-white;
+          font-size: pxToRem(14);
+          line-height: $space-standard;
+          font-weight: 500;
+          margin: $space-xs-small 0;
+          bottom: $space-small;
+          left: 14px;
+          padding-right: $space-x-small;
+        }
+      }
+
+      h3.santorini {
+        bottom: 64px;
+        left: 14px;
+      }
+
+      h3.portugal {
+        bottom: 65px;
+        left: 14px;
+      }
+
+      h3.train {
+        bottom: 65px;
+        left: 14px;
+        padding-right: $space-standard;
+      }
+    }
+
+    .row-2 {
+      width: 49%;
+      position: relative;
+      // text-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+      margin: 0.5%;
+
+      .dark {
+        width: 100%;
+        max-width: 539px;
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(12%, rgba(0, 0, 0, 0)),
+          color-stop(97%, #000)
+        );
+        background-image: -o-linear-gradient(
+          top,
+          rgba(0, 0, 0, 0) 12%,
+          #000 97%
+        );
+        background-image: linear-gradient(
+          -180deg,
+          rgba(0, 0, 0, 0) 12%,
+          #000 97%
+        );
+        pointer-events: none;
+      }
+
+      h3 {
+        position: absolute;
+        color: $c-white;
+        font-size: pxToRem(20);
+        line-height: 28px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      h3.house {
+        bottom: 62px;
+        left: 14px;
+      }
+
+      h3.lake {
+        bottom: $space-xl-large;
+        left: 14px;
+      }
+
+      p {
+        position: absolute;
+        color: $c-white;
+        font-size: pxToRem(14);
+        line-height: $space-standard;
+        font-weight: 500;
+        margin: $space-xs-small 0;
+        bottom: $space-small;
+        left: 14px;
+        padding-right: 38px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .inspiration-wrapper {
+    max-width: $wrapper-high;
+    margin: $space-standard auto;
+    padding: 0 $space-x-small;
+  }
+}
+
+@media only screen and (max-width: 1003px) {
+  .inspiration-wrapper {
+    .articles-wrapper {
+      .row-3 {
+        .dark {
+          h3.portugal {
+            top: 5%;
+            padding-right: $space-xs-small;
+          }
+        }
+      }
+      .row-2 {
+        .dark {
+          h3.house {
+            padding-right: $space-xs-small;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .inspiration-wrapper {
+    .articles-wrapper {
+      .row-3,
+      .row-2 {
+        .dark {
+          h3 {
+            font-size: pxToRem(18);
+          }
+
+          h3.portugal {
+            top: 12%;
+          }
+
+          p {
+            font-size: pxToRem(12);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 874px) {
+  .inspiration-wrapper {
+    .articles-wrapper {
+      .row-3,
+      .row-2 {
+        .dark {
+          h3.portugal {
+            top: unset;
+            bottom: 65%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .inspiration-wrapper {
+    .articles-wrapper {
+      .row-3,
+      .row-2 {
+        .dark {
+          h3,
+          h3.portugal {
+            top: unset;
+            bottom: $space-standard;
+          }
+
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .inspiration-wrapper {
+    h2 {
+      font-size: pxToRem(22);
+    }
+    .articles-wrapper {
+      .row-3,
+      .row-2 {
+        .dark {
+          h3 {
+            font-size: pxToRem(16);
+            line-height: $space-standard;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-mid) {
+  .inspiration-wrapper {
+    .articles-wrapper {
+      .row-3,
+      .row-2 {
+        .dark {
+          h3 {
+            font-size: pxToRem(10);
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .inspiration-wrapper {
+    .articles-wrapper {
+      .row-3,
+      .row-2 {
+        .dark {
+          h3 {
+            font-size: pxToRem(14);
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .inspiration-wrapper {
+    .articles-wrapper {
+      .row-3,
+      .row-2 {
+        .dark {
+          h3 {
+            font-size: pxToRem(13);
+            line-height: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .inspiration-wrapper {
+    .articles-wrapper {
+      .row-3,
+      .row-2 {
+        .dark {
+          h3 {
+            font-size: pxToRem(11);
+            line-height: $space-x-smaller;
+          }
+        }
+      }
+    }
+  }
+}

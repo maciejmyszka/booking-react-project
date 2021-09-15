@@ -1,0 +1,118 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.rules-wrapper {
+  margin: $space-standard;
+
+  .rules-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    .header-left {
+      h3 {
+        color: $c-mine-shaft;
+        font-size: pxToRem(20);
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+
+      p {
+        display: block;
+        margin-top: $space-xs-small;
+        color: $c-dove-gray;
+        font-size: pxToRem(13);
+      }
+    }
+
+    button {
+      padding: 8px 14px;
+      cursor: pointer;
+      color: $c-white;
+      font-size: pxToRem(14);
+      font-weight: 500;
+      line-height: $space-standard;
+      border-radius: 2px;
+      vertical-align: middle;
+      background-color: $c-lochmara;
+      border: none;
+      max-height: $space-large;
+      width: $button-medium;
+      margin: auto 0;
+      min-width: 166px;
+    }
+  }
+
+  .rules-content {
+    background: $c-zumthor;
+    padding: $space-x-small;
+    margin: 0 0 $space-standard 0;
+    border-top: 1px solid $c-zumthor;
+    border-bottom: 1px solid $c-zumthor;
+    font-weight: normal;
+    overflow: hidden;
+    border-radius: 3px;
+
+    div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+
+      p:first-of-type {
+        width: 25%;
+        padding: $space-standard;
+      }
+
+      p {
+        width: 75%;
+        font-size: pxToRem(14);
+        padding-right: $space-standard;
+        margin: auto 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .rules-wrapper {
+    .rules-header {
+      .header-left {
+        padding-right: $space-xs-small;
+      }
+
+      button {
+        min-width: 120px;
+        max-height: unset;
+      }
+    }
+
+    .rules-content {
+      div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+        p:first-of-type {
+          padding: 0;
+          margin-top: $space-standard;
+          font-size: pxToRem(15);
+          font-weight: bold;
+          width: 100%;
+        }
+
+        .first-p {
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+}

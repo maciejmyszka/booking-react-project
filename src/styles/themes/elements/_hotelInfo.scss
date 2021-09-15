@@ -1,0 +1,251 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.hotel-info-wrapper {
+  width: 78%;
+  margin-top: 115px;
+
+  .hotel-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .header-left {
+      margin: $space-x-small;
+      margin-left: $space-standard;
+
+      h2 {
+        display: inline-block;
+        margin: 0;
+        margin-right: $space-x-small;
+
+        span {
+          display: inline-block;
+          font-size: pxToRem(12);
+          font-weight: normal;
+          line-height: 18px;
+          vertical-align: middle;
+          margin-top: -5px;
+          padding: 0 4px;
+          border-radius: 3px;
+          background: $c-silver-chalice;
+          color: $c-white;
+          margin-right: $space-x-small;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: $space-small;
+      }
+
+      .header-address {
+        margin-top: $space-x-small;
+
+        p:first-of-type {
+          color: $c-mine-shaft;
+          font-size: pxToRem(13);
+          line-height: 1.2;
+          font-weight: unset;
+          margin-left: 0;
+
+          img {
+            vertical-align: middle;
+          }
+        }
+
+        p {
+          display: inline-block;
+          margin: 0 $space-xs-small;
+          color: $c-lochmara;
+          font-weight: bold;
+          font-size: pxToRem(13);
+          line-height: 1.2;
+        }
+      }
+    }
+
+    .header-right {
+      img {
+        margin: auto $space-x-small;
+        vertical-align: middle;
+      }
+
+      button {
+        vertical-align: middle;
+        position: relative;
+        color: $c-white;
+        min-height: 36px;
+        min-width: 36px;
+        font-size: pxToRem(14);
+        font-weight: 500;
+        line-height: $space-standard;
+        border-radius: 2px;
+        background-color: $c-lochmara;
+        border: none;
+        padding: 8px 16px;
+        margin-left: $space-x-small;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .hotel-info-wrapper {
+    .hotel-header {
+      margin-right: $space-standard;
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .hotel-info-wrapper {
+    width: 76%;
+
+    .hotel-header {
+      .hotel-right {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hotel-info-wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 963px) {
+  .hotel-info-wrapper {
+    margin-top: $space-medium;
+    max-width: $wrapper;
+    margin: 0 auto;
+    width: 97%;
+
+    .hotel-header {
+      margin: $space-standard 0;
+
+      .header-left {
+        margin-left: 0;
+      }
+      .header-right {
+        margin: $space-x-small;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-mid) {
+  .hotel-info-wrapper {
+    .hotel-header {
+      .header-right {
+        position: relative;
+
+        img {
+          position: absolute;
+          top: $space-x-large;
+          right: -6%;
+        }
+
+        img:nth-of-type(2) {
+          right: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .hotel-info-wrapper {
+    .hotel-header {
+      .header-left {
+        h2 {
+          display: block;
+        }
+      }
+
+      .header-right {
+        button {
+          min-width: $button-small;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hotel-info-wrapper {
+    .hotel-header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      .header-left {
+        width: 100%;
+
+        h2 {
+          display: inline-block;
+        }
+      }
+
+      .header-right {
+        width: 100%;
+        margin: 0;
+        margin-bottom: $space-x-small;
+
+        img {
+          top: 4px;
+          left: 40%;
+          right: unset;
+        }
+
+        img:nth-of-type(2) {
+          left: 55%;
+        }
+
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .hotel-info-wrapper {
+    .hotel-header {
+      .header-right {
+        img {
+          left: 47%;
+        }
+
+        img:nth-of-type(2) {
+          left: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hotel-info-wrapper {
+    .hotel-header {
+      .header-left {
+        h2 {
+          display: block;
+        }
+      }
+    }
+  }
+}

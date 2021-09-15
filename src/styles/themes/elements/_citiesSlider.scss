@@ -1,0 +1,134 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.citiesSlider-wrapper {
+  max-width: $wrapper-high;
+  margin: $space-large auto;
+
+  .slick-slider {
+    position: relative;
+
+    button:first-of-type {
+      left: $space-x-small;
+      top: 96px;
+      z-index: 1;
+    }
+
+    button {
+      right: 17px;
+      top: 96px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      color: $c-white;
+      opacity: 1;
+    }
+
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before {
+      display: none;
+    }
+  }
+
+  .slide-element {
+    position: relative;
+    margin: 0 auto;
+
+    .picture {
+      position: relative;
+      margin: 1%;
+
+      .dark {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: $c-white;
+        height: 50%;
+        max-width: 263px;
+        width: 100%;
+        background: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0, #000),
+          color-stop(50%, rgba(0, 0, 0, 0.8)),
+          to(transparent)
+        );
+        background: -o-linear-gradient(
+          bottom,
+          #000 0,
+          rgba(0, 0, 0, 0.8) 50%,
+          transparent
+        );
+        background: linear-gradient(
+          0deg,
+          #000 0,
+          rgba(0, 0, 0, 0.8) 50%,
+          transparent
+        );
+      }
+
+      h3 {
+        position: absolute;
+        bottom: 37%;
+        left: 5%;
+        font-weight: 700;
+        line-height: 16px;
+        margin: 0;
+        font-size: pxToRem(16);
+      }
+
+      p {
+        position: absolute;
+        bottom: 14%;
+        left: 5%;
+        margin: 0;
+        color: $c-white;
+        text-decoration: none;
+        font-size: pxToRem(14);
+      }
+
+      p:hover {
+        color: $c-white;
+        cursor: unset;
+      }
+    }
+
+    .description {
+      margin-top: $space-small;
+      width: 90%;
+
+      p {
+        color: $c-lochmara;
+        text-decoration: underline;
+        display: inline;
+        line-height: $space-standard;
+        font-size: pxToRem(14);
+      }
+
+      p:hover {
+        color: $c-selective-yellow;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .citiesSlider-wrapper {
+    max-width: 1080px;
+    padding: 0 $space-x-small;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .citiesSlider-wrapper {
+    display: none;
+  }
+}

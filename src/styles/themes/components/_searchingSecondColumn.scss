@@ -1,0 +1,63 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.second-column {
+  margin-top: $space-x-small;
+  border: 1px solid $c-silver;
+  border-radius: 3px;
+  margin-bottom: $space-medium;
+
+  h3 {
+    position: static;
+    color: $c-black;
+    background: 0;
+    margin: 0;
+    padding: 8px;
+    font-size: pxToRem(16);
+    line-height: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid $c-silver;
+  }
+  div {
+    border-bottom: 1px solid $c-silver;
+    padding: $space-x-small 8px;
+
+    h4 {
+      margin: 0;
+      padding: $space-xs-small 0;
+      font-size: pxToRem(14);
+      line-height: $space-standard;
+      font-weight: 700;
+    }
+
+    label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+
+      span {
+        width: 70%;
+        margin-left: $space-xs-small;
+        margin-top: 6px;
+        font-size: pxToRem(13);
+        color: #000;
+        line-height: 1.6em;
+      }
+
+      input {
+        display: inline-block;
+        height: 17px;
+        margin: $space-xs-small;
+        width: 17px;
+        min-width: 10%;
+      }
+    }
+  }
+}

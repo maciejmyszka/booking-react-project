@@ -1,0 +1,150 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.searching-panel {
+  padding: 16px;
+  position: relative;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, $c-selective-yellow),
+    to($c-selective-yellow)
+  );
+  background: -o-linear-gradient(top, $c-selective-yellow 0, $c-selective-yellow 100%);
+  background: linear-gradient(to bottom, $c-selective-yellow 0, $c-selective-yellow 100%);
+  color: $c-mine-shaft;
+  border-radius: 3px;
+
+  .panel-mobile {
+    display: none;
+  }
+
+  h3 {
+    font-size: pxToRem(21);
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  label {
+    font-size: pxToRem(12);
+    line-height: 18px;
+    margin-top: $space-xs-small;
+    display: block;
+    position: relative;
+    width: 100%;
+
+    input {
+      font-size: pxToRem(14);
+      line-height: $space-standard;
+      padding: 8px;
+      height: auto;
+      color: $c-mine-shaft;
+      background: $c-white;
+      border-radius: 2px;
+      border: none;
+      display: block;
+      width: 82%;
+      padding-left: $space-medium;
+    }
+
+    img {
+      position: absolute;
+      opacity: 0.7;
+      top: 24px;
+      left: 2px;
+      z-index: 1;
+    }
+  }
+
+  .people-number {
+    width: 100%;
+    position: relative;
+    margin-top: $space-standard;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    input {
+      font-size: pxToRem(14);
+      line-height: $space-standard;
+      padding: 8px;
+      height: auto;
+      color: $c-mine-shaft;
+      background: $c-white;
+      border-radius: 2px;
+      border: none;
+      margin-top: $space-xs-small;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    input:first-of-type {
+      width: 100%;
+    }
+
+    input:nth-of-type(2) {
+      width: 48%;
+      margin-right: 1%;
+    }
+
+    input:nth-of-type(3) {
+      width: 48%;
+      margin-left: 1%;
+    }
+  }
+
+  .work {
+    width: unset;
+    margin: $space-x-small 0;
+
+    input {
+      display: inline-block;
+      width: unset;
+      margin: 0 $space-xs-small;
+    }
+  }
+
+  button {
+    font-size: pxToRem(16);
+    line-height: 24px;
+    padding: $space-x-smaller;
+    width: 100%;
+    border-radius: 2px;
+    color: $c-white;
+    background-color: $c-lochmara;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  .main-content-wrapper {
+    .search-column-wrapper {
+      width: 97%;
+    }
+  }
+
+  .objectpage {
+    .searching-panel {
+      margin-top: 93px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .objectpage {
+    .searching-panel {
+      margin-top: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.favHouses-wrapper {
+  max-width: $wrapper-high;
+  margin: 0 auto;
+
+  h2 {
+    font-size: pxToRem(24);
+  }
+
+  .slider-wrapper {
+    p {
+      font-size: pxToRem(14);
+      font-weight: 600;
+      line-height: $space-standard;
+    }
+
+    .slide-element {
+      span {
+        display: block;
+      }
+
+      span:first-of-type {
+        color: $c-lochmara;
+        font-size: pxToRem(14);
+        margin-top: $space-x-small;
+      }
+
+      .rating {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        p {
+          margin: $space-x-small 6px;
+        }
+
+        p:first-of-type {
+          background-color: $c-resolution-blue;
+          color: $c-white;
+          padding: 4px;
+          border-radius: 5.09091px 5.09091px 5.09091px 0;
+          font-size: pxToRem(15);
+          margin-top: $space-xs-small;
+          margin-left: 0;
+        }
+
+        span {
+          margin: $space-x-small;
+          color: $c-dove-gray;
+          margin-top: 13px;
+          font-size: pxToRem(14);
+        }
+      }
+    }
+  }
+  .slide-more {
+    position: relative;
+
+    img {
+      opacity: 0.85;
+    }
+
+    p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $c-white;
+      font-size: pxToRem(16);
+      line-height: 26px;
+      font-weight: 500;
+      margin: 0;
+      padding: 16px;
+      // text-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+      width: 85%;
+    }
+
+    .more-btn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $c-white;
+      color: $c-lochmara;
+      font-size: pxToRem(14);
+      border: 1px solid $c-lochmara;
+      top: unset !important;
+      right: unset !important;
+      margin: 16px;
+      padding: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1041px) {
+  .favHouses-wrapper {
+    display: none;
+  }
+}

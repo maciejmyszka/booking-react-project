@@ -1,0 +1,69 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.important-info-wrapper {
+  margin: $space-standard;
+
+  .info-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    h3 {
+      color: $c-mine-shaft;
+      font-size: pxToRem(20);
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
+    button {
+      padding: 8px 14px;
+      cursor: pointer;
+      color: $c-white;
+      font-size: pxToRem(14);
+      font-weight: 500;
+      line-height: $space-standard;
+      border-radius: 2px;
+      vertical-align: middle;
+      background-color: $c-lochmara;
+      border: none;
+      max-height: $space-large;
+      width: $button-medium;
+      margin: auto 0;
+    }
+  }
+
+  .info-content {
+    background: $c-zumthor;
+    padding: $space-x-small;
+    border-top: 1px solid $c-zumthor;
+    border-bottom: 1px solid $c-zumthor;
+    font-weight: normal;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: $space-small;
+
+    p {
+      font-size: pxToRem(14);
+      padding: $space-x-small;
+      margin: auto 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .important-info-wrapper {
+    .info-header {
+      button {
+        max-height: unset;
+      }
+    }
+  }
+}

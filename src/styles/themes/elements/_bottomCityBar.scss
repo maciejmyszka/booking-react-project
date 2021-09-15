@@ -1,0 +1,35 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.bottom-bar-wrapper {
+  margin: $space-standard auto;
+  background-color: $c-zumthor;
+  cursor: pointer;
+  border-radius: 3px;
+  max-width: 1050px;
+  padding: $space-small $space-x-small;
+
+  h3 {
+    font-size: pxToRem(21);
+    color: $c-mine-shaft;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: pxToRem(14);
+    padding: $space-xs-small 0;
+    color: $c-mine-shaft;
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  .bottom-bar-wrapper {
+    text-align: center;
+  }
+}

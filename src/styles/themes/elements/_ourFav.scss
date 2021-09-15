@@ -1,0 +1,81 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.ourFav-wrapper {
+  max-width: $wrapper-high;
+  margin: 0 auto;
+
+  h2 {
+    font-size: pxToRem(24);
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .fav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid $c-lochmara;
+    padding: 0;
+    font-size: pxToRem(13);
+    margin: $space-xs-small 0;
+
+    li {
+      padding: 7px $space-small;
+      list-style: none;
+      margin: 0;
+      color: #737373;
+      cursor: pointer;
+    }
+  }
+  .places-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    div {
+      width: 20%;
+
+      p {
+        color: $c-lochmara;
+        font-size: pxToRem(14);
+        line-height: $space-standard;
+        margin: 0;
+        margin-top: $space-x-small;
+      }
+
+      span {
+        display: block;
+        color: #a5a5a5;
+        font-size: pxToRem(13);
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .ourFav-wrapper {
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 $space-x-small;
+
+    .slider-wrapper .slick-list .slick-track .slick-slide {
+      width: 200px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .ourFav-wrapper {
+    display: none;
+  }
+}

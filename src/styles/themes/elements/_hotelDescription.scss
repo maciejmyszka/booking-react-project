@@ -1,0 +1,162 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.hotel-description-wrapper {
+  margin: $space-standard;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 865.8px;
+
+  .description-left {
+    width: 60%;
+    h4 {
+      color: $c-rose-of-sharon;
+      font-size: pxToRem(14);
+    }
+
+    p {
+      font-size: pxToRem(14);
+      line-height: 1.4;
+    }
+  }
+
+  .description-right {
+    width: 35%;
+    background-color: $c-zumthor;
+    border: 1px solid $c-zumthor;
+    border-radius: 3px;
+    padding: $space-small;
+    margin-top: $space-large;
+    max-width: 240px;
+    position: relative;
+    max-height: 185px;
+
+    img {
+      position: absolute;
+      top: 16px;
+      left: $space-standard;
+    }
+
+    img:nth-of-type(2) {
+      top: 120px;
+      max-width: 100%;
+      height: 22px;
+      border-radius: 3px;
+    }
+
+    span {
+      font-size: pxToRem(13);
+      padding-left: $space-large;
+      display: inline-block;
+    }
+
+    p {
+      font-weight: bold;
+      padding: 0 0 $space-xs-small 0;
+      margin: 0;
+      color: $c-gray;
+      font-size: pxToRem(13);
+      margin-top: $space-small;
+      margin-left: $space-xs-small;
+    }
+
+    span:nth-of-type(2) {
+      padding: 0;
+      margin-left: $space-xs-small;
+    }
+
+    span:nth-of-type(3) {
+      padding: 11px 35px;
+      margin-left: $space-xs-small;
+    }
+
+    button {
+      vertical-align: middle;
+      position: relative;
+      color: $c-white;
+      font-size: pxToRem(14);
+      font-weight: 500;
+      line-height: $space-standard;
+      background-color: $c-lochmara;
+      border: none;
+      padding: 8px 0;
+      border-radius: 2px;
+      cursor: pointer;
+      margin: $space-x-small 0px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  .hotel-description-wrapper {
+    max-width: unset;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .hotel-description-wrapper {
+    .description-left {
+      padding-right: $space-standard;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .hotel-description-wrapper {
+    .description-left {
+      p:nth-of-type(3),
+      p:nth-of-type(4),
+      p:nth-of-type(5),
+      p:nth-of-type(6),
+      p:nth-of-type(7) {
+        width: 167%;
+      }
+    }
+
+    .description-right {
+      min-width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .hotel-description-wrapper {
+    .description-left {
+      p:nth-of-type(2) {
+        width: 167%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-mobile) {
+  .hotel-description-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    .description-left {
+      width: 100%;
+
+      p {
+        width: 100% !important;
+      }
+    }
+
+    .description-right {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

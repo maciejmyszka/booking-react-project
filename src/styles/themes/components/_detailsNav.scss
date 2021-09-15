@@ -1,0 +1,205 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.details-nav-wrapper {
+  max-width: $wrapper;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+
+  button {
+    width: 22.5%;
+    margin: $space-small 0;
+    text-align: center;
+    padding: $space-x-small $space-xs-small;
+    font-style: italic;
+    color: $c-mine-shaft;
+    font-size: pxToRem(11.3);
+    font-weight: 700;
+    line-height: 1.2;
+    border-radius: 3px;
+    background-color: $c-zumthor;
+    text-align: center;
+    border: none;
+    padding: 0 !important;
+  }
+
+  ul {
+    width: 77%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding-left: $space-standard;
+
+    li {
+      list-style-type: none;
+      color: $c-lochmara;
+      font-weight: bold;
+      padding: $space-x-small;
+      font-size: pxToRem(14);
+      background-color: $c-zumthor;
+      margin: 0 1px;
+      width: 20%;
+      text-align: center;
+    }
+  }
+
+  .corona-info {
+    position: absolute;
+    width: 75.7%;
+    right: 0;
+    border: 1px solid $c-black;
+    top: 55px;
+    background-color: $c-peach-cream;
+    border-color: $c-flush-orange;
+    padding: $space-standard 0;
+
+    img {
+      position: absolute;
+      top: 17px;
+      left: 17px;
+    }
+
+    p {
+      padding: 0px $space-xl-large;
+      margin: 0;
+      font-size: pxToRem(14);
+      font-weight: 400;
+      line-height: $space-standard;
+      margin-bottom: $space-small;
+    }
+
+    span {
+      color: $c-lochmara;
+      font-weight: bold;
+      padding: $space-x-small $space-xl-large;
+      margin-bottom: $space-medium;
+      font-size: pxToRem(14);
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-high) {
+  .details-nav-wrapper {
+    padding: 0 $space-x-smaller;
+
+    .corona-info {
+      width: 74%;
+      right: $space-x-smaller;
+    }
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .details-nav-wrapper {
+    padding: 0 $space-x-smaller;
+
+    .corona-info {
+      width: 72%;
+      right: $space-x-smaller;
+    }
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  .details-nav-wrapper {
+    .corona-info {
+      margin-top: $space-xs-small;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 97.5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 951px) {
+  .details-nav-wrapper {
+    ul {
+      min-width: 722px;
+      overflow-x: auto;
+    }
+
+    .corona-info {
+      padding: $space-x-small 0;
+
+      span {
+        padding: $space-xs-small $space-xl-large;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $wrapper-x-mid) {
+  .details-nav-wrapper {
+    ul {
+      width: 100%;
+      padding: 0;
+    }
+
+    button {
+      display: none;
+    }
+
+    .corona-info {
+      width: 97.1%;
+
+      p {
+        margin-bottom: 8px;
+      }
+
+      span {
+        font-size: pxToRem(12);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .details-nav-wrapper {
+    ul {
+      min-width: unset;
+    }
+
+    .corona-info {
+      top: 68px;
+      width: 96.5%;
+
+      p {
+        font-size: pxToRem(12);
+      }
+
+      span {
+        font-size: pxToRem(11);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .details-nav-wrapper {
+    .corona-info {
+      width: 96.2%;
+    }
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .details-nav-wrapper {
+    overflow-x: auto;
+
+    ul {
+      min-width: 720px;
+    }
+
+    .corona-info {
+      display: none;
+    }
+  }
+}

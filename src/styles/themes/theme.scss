@@ -1,0 +1,35 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import "../normalize.scss";
+@import "../variables.scss";
+@import "../mixins.scss";
+
+@import "./elements/BarOnTop";
+@import "./elements/corona";
+@import "./components/searchingBar";
+@import "./elements/kindOfObject";
+@import "./elements/picturesPL";
+@import "./elements/polishPlaces";
+@import "./elements/favHouses";
+@import "./elements/inspiration";
+@import "./elements/travelTalk";
+@import "./elements/citiesSlider";
+@import "./elements/ourFav";
+@import "./elements/explore";
+@import "./elements/newsletter";
+@import "./elements/footer";
+@import "./elements/location";
+@import "./components/searchAndResult";
+@import "./components/searchingColumn";
+@import "./elements/result";
+@import "./components/searchingSecondColumn";
+@import "./components/detailsNav";
+@import "./elements/mapElement";
+@import "./elements/hotelInfo";
+@import "./elements/hotelPicture";
+@import "./elements/healthSecure";
+@import "./elements/hotelDescription";
+@import "./elements/rules";
+@import "./elements/importantInfo";
+@import "./elements/bottomCityBar";
