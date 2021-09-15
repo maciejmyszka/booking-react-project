@@ -12,7 +12,7 @@ const BarOnTop = () => {
   const resetDetails = () => {
     setCity("");
     setObject("");
-    setHotel((prevState) => !prevState);
+    setHotel(false);
   };
 
   return (

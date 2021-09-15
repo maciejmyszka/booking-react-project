@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 import CoronaAlert from "../elements/CoronaAlert";
 import BarOnTop from "../elements/BarOnTop";
 import Location from "../elements/Location";
@@ -9,14 +9,18 @@ import HotelInfo from "../elements/HotelInfo";
 import Newsletter from "../elements/Newsletter";
 import Footer from "../elements/Footer";
 import BottomCityBar from "../elements/BottomCityBar";
+import { AppContext } from "../AppContext";
 
 const Objectpage = () => {
   const refInfo = useRef(null);
   const refRules = useRef(null);
   const refImportant = useRef(null);
 
+  const {setHotel} = useContext(AppContext)
+
   return (
     <>
+      <button className="backToResults" onClick={() => setHotel(false)}>Wróc do wyników wyszukiwania</button>
       <BarOnTop />
       <CoronaAlert />
       <Location />

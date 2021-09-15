@@ -42,7 +42,6 @@ const Carousel = () => {
             alt="hotel"
             width={207}
             height={180}
-            layout="constrained"
             placeholder="blurred"
           />
           <p>Hotele</p>
@@ -54,7 +53,6 @@ const Carousel = () => {
             alt="apartment"
             width={207}
             height={180}
-            layout="constrained"
             placeholder="blurred"
           />
           <p>Apartamenty</p>

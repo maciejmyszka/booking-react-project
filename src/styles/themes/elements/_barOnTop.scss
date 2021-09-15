@@ -18,6 +18,24 @@ html {
   scroll-behavior: smooth;
 }
 
+.backToResults {
+  color: #ffffff;
+  min-height: 36px;
+  min-width: 36px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 2px;
+  background-color: #0071c2;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  z-index: 1;
+  bottom: 20px;
+  left: 20.5%;
+  position: fixed;
+}
+
 .company-wrapper {
   background-color: $c-resolution-blue;
   color: $c-white;

@@ -13,7 +13,7 @@
   border-bottom: 1px solid $c-mercury;
 
   .search {
-    max-width:$wrapper;
+    max-width: $wrapper;
     margin: 0 auto;
 
     h1 {
@@ -37,7 +37,7 @@
   }
 
   .bar-wrapper {
-    max-width:$wrapper;
+    max-width: $wrapper;
     margin: 28px auto;
     position: relative;
 
@@ -279,10 +279,14 @@
             border-bottom: none;
           }
 
+          button {
+            width: 100%;
+            border: 5px solid #febb02;
+          }
+
           div {
             width: 100%;
             height: $space-x-large;
-            border: none;
             border: $space-xs-small solid $c-selective-yellow;
             border-bottom: none;
 
