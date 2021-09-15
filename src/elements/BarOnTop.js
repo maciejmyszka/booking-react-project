@@ -4,7 +4,7 @@ import menu from "../images/menu-icon.svg";
 import profile from "../images/profile-icon.svg";
 import flag from "../images/poland_icon.png";
 
-import AppContext from "../AppContext";
+import { AppContext } from "../AppContext";
 
 const BarOnTop = () => {
   const { setCity, setObject } = useContext(AppContext);
