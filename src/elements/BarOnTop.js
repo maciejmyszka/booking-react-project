@@ -10,8 +10,8 @@ const BarOnTop = () => {
       <div className="company-intro">
         <h3>
           <a
-            href="/src/pages/homepage.js.js"
-            style={{ "textDecoration": "none", color: "#fff" }}
+            href="/homepage.js"
+            style={{ textDecoration: "none", color: "#fff" }}
           >
             Booking<span>.com</span>
           </a>
