@@ -36,6 +36,11 @@
         font-size: pxToRem(14);
       }
 
+      img {
+        width: 100%;
+        height: auto;
+      }
+
       .explore-description {
         position: absolute;
         top: 0;

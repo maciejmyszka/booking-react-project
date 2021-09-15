@@ -2,6 +2,19 @@ import React, { useState, useEffect, useContext } from "react";
 import Slider from "react-slick";
 import { AppContext } from "../AppContext";
 
+import apartment from "../images/apartment slider small.jpg";
+import apartmentHotel from "../images/apartmentHotel slider small.jpg";
+import camping from "../images/camping slider small.jpg";
+import country from "../images/country slider small.jpg";
+import houses from "../images/house slider small.jpg";
+import holiday from "../images/holidayHouse slider small.jpg";
+import guesthouse from "../images/guesthouse slider small.jpg";
+import hostel from "../images/hostel slider small.jpg";
+import motel from "../images/motel slider small.jpg";
+import resort from "../images/resort slider small.jpg";
+import villa from "../images/villa slider small.jpg";
+import hotel from "../images/hotel-slider small.jpg";
+
 const Carousel = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -38,7 +51,7 @@ const Carousel = () => {
       <Slider {...settings}>
         <div className="slide-element" onClick={() => setObject("hotel")}>
           <img
-            src="https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o="
+            src={hotel}
             alt="hotel"
             width={207}
             height={180}
@@ -49,7 +62,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("apartment")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-apartments_300/9f60235dc09a3ac3f0a93adbc901c61ecd1ce72e.jpg"
+            src={apartment}
             alt="apartment"
             width={207}
             height={180}
@@ -60,7 +73,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("resort")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_resorts/6f87c6143fbd51a0bb5d15ca3b9cf84211ab0884.jpg"
+            src={resort}
             alt="resort"
             width={207}
             height={180}
@@ -72,7 +85,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("villa")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-villas_300/dd0d7f8202676306a661aa4f0cf1ffab31286211.jpg"
+            src={villa}
             alt="villa"
             width={207}
             height={180}
@@ -84,7 +97,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("house")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg"
+            src={houses}
             alt="house"
             width={207}
             height={180}
@@ -96,7 +109,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("country")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_cottages/5e1fd9cd716f4825c6c7eac5abe692c52cc64516.jpg"
+            src={country}
             alt="country"
             width={207}
             height={180}
@@ -108,7 +121,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("camping")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_glamping/6e181b9e942c160f4605239be7ddc1728cbcc4c8.jpg"
+            src={camping}
             alt="camping"
             width={207}
             height={180}
@@ -123,7 +136,7 @@ const Carousel = () => {
           onClick={() => setObject("apartmentHotel")}
         >
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_aparthotel/10e092f390b128dcff92727912299eef7824b751.jpg"
+            src={apartmentHotel}
             alt="hotel apartment"
             width={207}
             height={180}
@@ -135,7 +148,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("house")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-holidayhomes_300/604c7484d34a9e8791c2d5a0e2df4bc8c803dc7c.jpg"
+            src={holiday}
             alt="holiday house"
             width={207}
             height={180}
@@ -147,7 +160,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("pensionat")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_guest_house/70618d86d515349ce56296a56d2eaaf283fd1542.jpg"
+            src={guesthouse}
             alt="guesthouse"
             width={207}
             height={180}
@@ -159,7 +172,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("hostel")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_hostels/cd5489c0d29025a9ca9daa602ac1581ba042bc69.jpg"
+            src={hostel}
             alt="hostel"
             width={207}
             height={180}
@@ -171,7 +184,7 @@ const Carousel = () => {
         </div>
         <div className="slide-element" onClick={() => setObject("motel")}>
           <img
-            src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_motels/9673cd1b55cbc1e1cdaeae09d87d16aa9d84d5f7.jpg"
+            src={motel}
             alt="motel"
             width={207}
             height={180}

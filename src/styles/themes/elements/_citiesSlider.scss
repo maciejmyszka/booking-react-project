@@ -43,6 +43,11 @@
       position: relative;
       margin: 1%;
 
+      img {
+        width: 100%;
+        height: auto;
+      }
+
       .dark {
         position: absolute;
         bottom: 0;
