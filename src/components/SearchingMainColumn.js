@@ -43,10 +43,10 @@ const SearchingMainColumn = () => {
     }
   };
 
-  const [childrenNum, setChildrenNum] = useState(children);
-  const [adultsNum, setAdultsNum] = useState(adults);
-  const [roomsNum, setRoomsNum] = useState(rooms);
-  const [destination, setDestination] = useState(city);
+  // const [childrenNum, setChildrenNum] = useState(children);
+  // const [adultsNum, setAdultsNum] = useState(adults);
+  // const [roomsNum, setRoomsNum] = useState(rooms);
+  // const [destination, setDestination] = useState(city);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -77,8 +77,8 @@ const SearchingMainColumn = () => {
               type="text"
               id="place"
               placeholder={city}
-              value={destination}
-              onChange={(e) => setDestination(e.target.value)}
+              // value={destination}
+              // onChange={(e) => setDestination(e.target.value)}
             />
           </label>
           <label>
@@ -95,7 +95,7 @@ const SearchingMainColumn = () => {
               name="adults"
               id="adult"
               placeholder={setAdultsNumber()}
-              onChange={(e) => setAdultsNum(e.target.value)}
+              // onChange={(e) => setAdultsNum(e.target.value)}
             />
             <datalist id="adults">
               <option value="1 dorosły" />
@@ -110,7 +110,7 @@ const SearchingMainColumn = () => {
               name="children"
               id="child"
               placeholder={setChildrenNumber()}
-              onChange={(e) => setChildrenNum(e.target.value)}
+              // onChange={(e) => setChildrenNum(e.target.value)}
             />
             <datalist id="children">
               <option value="bez dzieci" />
@@ -125,7 +125,7 @@ const SearchingMainColumn = () => {
               name="room"
               id="room"
               placeholder={setRoomsNumber()}
-              onChange={(e) => setRoomsNum(e.target.value)}
+              // onChange={(e) => setRoomsNum(e.target.value)}
             />
             <datalist id="rooms">
               <option value="1 pokój" />

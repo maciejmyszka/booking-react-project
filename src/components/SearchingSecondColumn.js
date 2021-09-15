@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
-import { AppContext } from "../AppContext";
+import React from "react";
 
 const SearchingSecondColumn = () => {
-  const { object } = useContext(AppContext);
+  // const { object } = useContext(AppContext);
 
   return (
     <div className="second-column">
