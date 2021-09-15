@@ -1,14 +1,19 @@
 import React from "react";
 import bed_icon from "../images/black-bed_icon.svg";
 import person_icon from "../images/person_icon.svg";
-import { useState } from "react";
+import { useState, useContext } from "react";
+
+import { AppContext } from "../AppContext";
 
 const SearchingBar = () => {
-  const [adults, setAdults] = useState(2);
-  const [children, setChildren] = useState(0);
-  const [rooms, setRooms] = useState(1);
   const [details, setDetails] = useState(false);
-  const [city, setCity] = useState("");
+
+  const [cityInput, setCityInput] = useState("");
+
+  const { rooms, setRooms } = useContext(AppContext);
+  const { adults, setAdults } = useContext(AppContext);
+  const { children, setChildren } = useContext(AppContext);
+  const { setCity } = useContext(AppContext);
 
   const showDetails = () => {
     setDetails((prevState) => !prevState);
@@ -30,7 +35,7 @@ const SearchingBar = () => {
 
   const onChangePlace = (e) => {
     const value = e.target.value;
-    setCity(value);
+    setCityInput(value);
   };
 
   return (
@@ -50,7 +55,7 @@ const SearchingBar = () => {
             <input
               type="text"
               placeholder="Dokąd się wybierasz?"
-              value={city}
+              value={cityInput}
               onChange={onChangePlace}
             />
             <input type="date" placeholder="zameldowanie/wymeldowanie" />
@@ -148,20 +153,9 @@ const SearchingBar = () => {
                 </div>
               )}
             </div>
-            {/* <Link
-              to="../searchpage"
-              state={{
-                adults: adults,
-                children: children,
-                rooms: rooms,
-                city: city,
-              }}
-              style={{
-                pointerEvents: city.length === 0 ? "none" : null,
-              }}
-            > */}
-              <button type="submit">Szukaj</button>
-            {/* </Link> */}
+            <button type="submit" onClick={() => setCity(cityInput)}>
+              Szukaj
+            </button>
           </form>
         </div>
         <input type="checkbox" id="work" />

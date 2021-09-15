@@ -34,7 +34,7 @@ const Place = ({
     setHotelName(name);
     setHotelCity(city);
     setHotelDistance(distance);
-    setHotelGrade(distance);
+    setHotelGrade(grade);
     setHotelRate(rate);
     setHotelOpinions(opinions);
     setHotelImg(img);

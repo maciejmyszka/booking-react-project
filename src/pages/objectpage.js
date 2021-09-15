@@ -11,18 +11,6 @@ import Footer from "../elements/Footer";
 import BottomCityBar from "../elements/BottomCityBar";
 
 const Objectpage = () => {
-  // const {
-  //   name = "",
-  //   city = "",
-  //   grade = "",
-  //   rate = "",
-  //   opinions = "",
-  //   img = "",
-  //   adults = "",
-  //   children = "",
-  //   rooms = "",
-  // } = location.state;
-
   const refInfo = useRef(null);
   const refRules = useRef(null);
   const refImportant = useRef(null);

@@ -7,7 +7,8 @@ import { AppContext } from "../AppContext";
 const SearchingMainColumn = () => {
   const [panel, showPanel] = useState(true);
 
-  const { city, children, adults, rooms } = useContext(AppContext);
+  const { city, children, adults, rooms, setCity } = useContext(AppContext);
+  const [cityInput, setCityInput] = useState("");
 
   const setChildrenNumber = () => {
     if (children === 0) {
@@ -43,11 +44,6 @@ const SearchingMainColumn = () => {
     }
   };
 
-  // const [childrenNum, setChildrenNum] = useState(children);
-  // const [adultsNum, setAdultsNum] = useState(adults);
-  // const [roomsNum, setRoomsNum] = useState(rooms);
-  // const [destination, setDestination] = useState(city);
-
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -77,8 +73,8 @@ const SearchingMainColumn = () => {
               type="text"
               id="place"
               placeholder={city}
-              // value={destination}
-              // onChange={(e) => setDestination(e.target.value)}
+              value={cityInput}
+              onChange={(e) => setCityInput(e.target.value)}
             />
           </label>
           <label>
@@ -95,7 +91,6 @@ const SearchingMainColumn = () => {
               name="adults"
               id="adult"
               placeholder={setAdultsNumber()}
-              // onChange={(e) => setAdultsNum(e.target.value)}
             />
             <datalist id="adults">
               <option value="1 dorosły" />
@@ -110,7 +105,6 @@ const SearchingMainColumn = () => {
               name="children"
               id="child"
               placeholder={setChildrenNumber()}
-              // onChange={(e) => setChildrenNum(e.target.value)}
             />
             <datalist id="children">
               <option value="bez dzieci" />
@@ -125,7 +119,6 @@ const SearchingMainColumn = () => {
               name="room"
               id="room"
               placeholder={setRoomsNumber()}
-              // onChange={(e) => setRoomsNum(e.target.value)}
             />
             <datalist id="rooms">
               <option value="1 pokój" />
@@ -140,18 +133,12 @@ const SearchingMainColumn = () => {
             <input type="checkbox" id="work" />
             Podróżuję służbowo
           </label>
-
-          {/* <Link
-            to="../searchpage"
-            state={{
-              children: childrenNum,
-              rooms: roomsNum,
-              adults: adultsNum,
-              city: destination,
-            }}
-          > */}
-          <button style={{ cursor: "pointer" }}>Szukaj</button>
-          {/* </Link> */}
+          <button
+            style={{ cursor: "pointer" }}
+            onClick={() => setCity(cityInput)}
+          >
+            Szukaj
+          </button>
         </form>
       </div>
     </>

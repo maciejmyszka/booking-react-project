@@ -1,11 +1,13 @@
 import React from "react";
 
+import healthImg from "../images/health-icon.svg"
+
 const HealthSecure = () => {
   return (
     <div className="health-secure-wrapper">
       <div className="health-pic">
         <img
-          src="../images/health-icon.svg"
+          src={healthImg}
           alt="health protection"
           layout="constrained"
           height={64}
