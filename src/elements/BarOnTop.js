@@ -7,11 +7,12 @@ import flag from "../images/poland_icon.png";
 import { AppContext } from "../AppContext";
 
 const BarOnTop = () => {
-  const { setCity, setObject } = useContext(AppContext);
+  const { setCity, setObject, setHotel } = useContext(AppContext);
 
   const resetDetails = () => {
     setCity("");
     setObject("");
+    setHotel((prevState) => !prevState);
   };
 
   return (
