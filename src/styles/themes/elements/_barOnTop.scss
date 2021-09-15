@@ -32,8 +32,10 @@ html {
   margin-left: 10px;
   z-index: 1;
   bottom: 20px;
-  left: 20.5%;
+  left: 20px;
   position: fixed;
+  cursor: pointer;
+  border: 5px solid #febb02 
 }
 
 .company-wrapper {

@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 
+import img1 from "../images/hotel-img-1.jpg"
+import img2 from "../images/hotel-img-2.jpg"
+import img3 from "../images/hotel-img-3.jpg"
+import img4 from "../images/hotel-img-4.jpg"
+
 const AutoSlick = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -27,28 +32,28 @@ const AutoSlick = () => {
       <Slider {...settings}>
         <div>
           <img
-            src="../images/hotel-img-1.jpg"
+            src={img1}
             alt="hotel"
             layout="constrained"
           />
         </div>
         <div>
           <img
-            src="../images/hotel-img-2.jpg"
+            src={img2}
             alt="hotel"
             layout="constrained"
           />
         </div>
         <div>
           <img
-            src="../images/hotel-img-3.jpg"
+            src={img3}
             alt="hotel"
             layout="constrained"
           />
         </div>
         <div>
           <img
-            src="../images/hotel-img-4.jpg"
+            src={img4}
             alt="hotel"
             layout="constrained"
           />
